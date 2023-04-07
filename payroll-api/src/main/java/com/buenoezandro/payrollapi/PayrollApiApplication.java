@@ -7,9 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @SpringBootApplication
 public class PayrollApiApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(PayrollApiApplication.class, args);
     }
-
 }
