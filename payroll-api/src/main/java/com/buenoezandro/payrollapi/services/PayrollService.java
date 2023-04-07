@@ -28,7 +28,7 @@ public class PayrollService {
                         payroll.getDescription(),
                         user.getHourlyPrice(),
                         payroll.getWorkedHours(),
-                        user.getHourlyPrice() * payroll.getWorkedHours()
+                        payroll.getWorkedHours() * user.getHourlyPrice()
                 );
             }
         } catch (FeignException.NotFound ex) {
