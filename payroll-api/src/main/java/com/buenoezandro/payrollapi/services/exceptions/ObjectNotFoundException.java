@@ -1,4 +1,4 @@
-package com.buenoezandro.userapi.services.exceptions;
+package com.buenoezandro.payrollapi.services.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
     public ObjectNotFoundException(String message) {

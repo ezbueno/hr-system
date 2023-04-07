@@ -1,4 +1,4 @@
-package com.buenoezandro.userapi.resources.exceptions;
+package com.buenoezandro.payrollapi.resources.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

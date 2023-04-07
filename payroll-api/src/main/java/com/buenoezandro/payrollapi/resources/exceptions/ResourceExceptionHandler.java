@@ -1,6 +1,6 @@
-package com.buenoezandro.userapi.resources.exceptions;
+package com.buenoezandro.payrollapi.resources.exceptions;
 
-import com.buenoezandro.userapi.services.exceptions.ObjectNotFoundException;
+import com.buenoezandro.payrollapi.services.exceptions.ObjectNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
