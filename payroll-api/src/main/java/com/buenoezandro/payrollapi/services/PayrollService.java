@@ -9,7 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
-import java.util.Objects;
+import static java.util.Objects.nonNull;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -22,7 +22,7 @@ public class PayrollService {
         log.info("PAYROLL SERVICE ::: Get request on " + this.environment.getProperty("local.server.port") + " port");
         try {
             var user = this.userFeign.findById(workerId).getBody();
-            if (Objects.nonNull(user)) {
+            if (nonNull(user)) {
                 return new Payroll(
                         user.getName(),
                         payroll.getDescription(),
